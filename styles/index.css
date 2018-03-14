@@ -1,21 +1,49 @@
 *{padding: 0;margin: 0;}
-body{background: #000;color: #fff;}
+body{background: #efefef;}
 a{text-decoration: none;color:inherit;}
-.clearfix::after{content: ;display: block;clear: both;}
+hr{height: 0;border: none;border-top: 1px solid #efefef;}
+.clearfix::after{content:'';display: block;clear: both;}
 
 /* header */
-header{padding: 20px 16px;height: 40px;}
+header{padding: 20px 0px;height: 40px;width: 100%;position: fixed;top: 0;left: 0;}
+.header-inner{padding: 0px 16px;}
 header .logo{font-size: 24px;color: #fff;float: left;font-family: "Arial Black";padding-left: 16px;
     padding-top: 3px;padding-bottom: 4px;}
 header .logo .rs{margin-right: 4px;color: rgb(232, 103, 107);}
 header .logo .card{color:rgb(154, 167, 162);}
 
 
-header>nav{float: right;padding-top: 7px;}
-header>nav>ul{margin: 0px;padding: 0;list-style: none;}
-header>nav>ul>li{float: left;margin-left: 17px;margin-right: 17px;}
-header>nav>ul>li>a{font-size: 12px;display: block;border-bottom: 3px solid transparent;padding-bottom: 5px;
+header nav{float: right;padding-top: 7px;}
+header nav>ul{margin: 0px;padding: 0;list-style: none;}
+header nav>ul>li{float: left;margin-left: 17px;margin-right: 17px;}
+header nav>ul>li>a{font-size: 12px;display: block;border-bottom: 3px solid transparent;padding-bottom: 5px;
     padding-top: 5px;border-top: 3px solid transparent;color: rgba(255, 255, 255, 0.7);font-weight: bold;}
-header>nav>ul>li>a:hover{border-bottom:3px solid rgb(232,103,107);}
+header nav>ul>li>a:hover{border-bottom:3px solid rgb(232,103,107);}
+
+/* banner */
+.banner{background: url(../images/banner.jpg);height: 515px;background-position: center center;
+    background-size: cover;}
+.mask{height: 515px;background: rgba(0, 0, 0, 0.8);}
+
+/* main */
+
+.userCard{max-width: 940px;margin: 0 auto;background: #fff;}
+.userCard .picAndTxt{padding: 50px;}
+.userCard .picAndTxt .picture{float: left;}
+
+.userCard .picAndTxt .text{float: left;margin-left: 65px;width: 470px;}
+.userCard .welcome{color: #fff;background: rgb(232, 103, 107);display: inline-block;padding: 4px 10px;
+    position: relative;}
+.userCard .welcome .triangle{border: 10px solid transparent;width: 0px;border-top-width: 0px;
+    border-left-color: rgb(232, 103, 107);display: block;position: absolute;left:4px;top: 100%; }
+.userCard .text>h1{margin-top: 26px;margin-bottom: 10px;}
+.userCard .text>hr{margin: 20px 0;}
+.userCard .text dl dt{float: left;width: 30%;padding: 5px 0px;}
+.userCard .text dl dd{float: left;width: 70%;padding: 5px 0px;color: #9da0a7;}
+
+.userCard .footer{background: rgb(232, 103, 107);text-align: center; }
+.userCard .footer a{display: inline-block;width: 40px;height: 40px;border-radius: 50%;line-height:30px;margin: 16px;}
+.userCard .footer a:hover{background: #cf5d5f;}
+.userCard .footer svg{width: 30px;height: 30px;color: #fff;padding: 0 6px;vertical-align: top;;padding: 5px 0;}
 
 
